@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/style/style.css">
     <title>The Glass Huts</title>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <!--header start-->
+        <header class="header">
+            <div class="header__logo">
+                <img src="/img/header/logo.svg" alt="logo">
+            </div>
+            <div class="header__menu">
+                <nav class="menu__list">
+                    <ul class="list__items">
+                        <li class="items__item">
+                            <a href="#" class="item__link">HOME</a>
+                        </li>
+                        <li class="items__item">
+                            <a href="#" class="item__link">THE HUT</a>
+                        </li>
+                        <li class="items__item">
+                            <a href="#" class="item__link">THE AREA</a>
+                        </li>
+                        <li class="items__item">
+                            <a href="#" class="item__link">BOOKING</a>
+                        </li>
+                        <li class="items__item">
+                            <a href="#" class="item__link">ABOUT US</a>
+                        </li>
+                        <li class="items__item">
+                            <a href="#" class="item__link">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__language">
+                <img src="/img/header/united-kingdom.svg" alt="uk">
+            </div>
+            <div class="header__button">BOOK NOW</div>
+        </header>
+        <!--header end-->
+
+        <!--main start-->
+        <main class="page">
+            <!--main start-->
+            <section class="main__page main">
+                <div class="swiper mySwiper">
+                    <div class="main__text">
+                        <h1 class="main__title">Find peace in the Forest</h1>
+                        <h1 class="main__subtitle">Come and stay in out hut hotel near <br> Mariager Fjord in Denmark</h1>
+                    </div>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="/img/main/background.jpg" alt="main-background">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="/img/main/background2.jpg" alt="main-background">
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+            <!--main end-->
+            
+            <!--bookNow start-->
+            <section class="page__bookNow bookNow">
+                <div class="bookNow__container">
+                    <div class="bookNow__block">
+                        <div class="block__left">BOOK NOW</div>
+                        <div class="block__right">
+                            <div class="right1">from</div>
+                            <div class="right2">$3.200</div>
+                            <div class="right3">per night</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--bookNow end-->
+        </main>
+        <!--main end-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
