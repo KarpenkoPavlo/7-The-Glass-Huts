@@ -9,6 +9,9 @@
 @import url(header1.css);
 @import url(main.css);
 @import url(booknow.css);
+@import url(cabins-info.css);
+@import url(cabinsVideo.css);
+@import url(map.css);
 /*scss\css import end*/
 /*zeroing start*/
 *,
@@ -80,7 +83,7 @@ body {
 }
 
 [class*=__container] {
-  max-width: 1116px;
+  max-width: 1408px;
   padding: 0px 15px 0px 15px;
   margin: 0 auto;
 }

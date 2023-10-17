@@ -1,9 +1,11 @@
 .header {
+    padding-top: 20px;
+}
+.header__container {
     display: flex;
     max-width: 1240px;
     margin: 0 auto;
     align-items: center;
-    padding: 20px 5px 0px 5px;
     gap: 25px;
 }
 .header__logo {

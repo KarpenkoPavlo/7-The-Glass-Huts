@@ -1,6 +1,6 @@
 .bookNow {
   position: relative;
-  margin: -37px;
+  margin-top: -37px;
   z-index: 1;
 }
 
@@ -8,6 +8,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  max-width: 529px;
 }
 
 .block__left {

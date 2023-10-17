@@ -1,12 +1,14 @@
 .bookNow {
     position: relative;
-    margin: -37px;
+    margin-top: -37px;
     z-index: 1;
 }
 .bookNow__container {
 }
 .bookNow__block {
     display: flex;
+    justify-content: end;
+    max-width: 529px;
 }
 .block__left {
     background-color: #5B6460;
