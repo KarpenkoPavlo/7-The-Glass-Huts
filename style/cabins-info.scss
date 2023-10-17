@@ -1,0 +1,44 @@
+.cabinsInfo {
+    max-width: 1408px;
+    margin: 0 auto;
+    padding-top: 113px;
+    display: flex;
+    justify-content: end;
+}
+.cabinsInfo__cont {
+    display: flex;
+    column-gap: 90px;
+}
+.cabinsInfo__text {
+    align-self: end;
+}
+.cabinsInfo__title {
+    color: #5B6460;
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 100%; /* 40/40 */
+}
+.cabinsInfo__title:not(:last-child) {
+    margin-bottom: 50px;
+}
+.cabinsInfo__subtitle {
+    max-width: 465px;
+    color: #000;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 187.5%; /* 30/16 */
+}
+.cabinsInfo__subtitle:not(:last-child) {
+    margin-bottom: 20px;
+}
+.cabinsInfo__link {
+    color: #5B6460;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 187.5%; /* 30/16 */
+}
+.cabinsInfo__image {
+}
