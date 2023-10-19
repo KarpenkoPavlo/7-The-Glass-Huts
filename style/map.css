@@ -2,10 +2,20 @@
   padding-top: 150px;
 }
 
-.map__container {
+.map__cont {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1408px;
+  margin: 0 auto;
+}
+
+.map__map {
+  width: 100%;
+}
+
+.map__map img {
+  max-width: 100%;
 }
 
 .map__text {

@@ -12,6 +12,9 @@
 @import url(cabins-info.css);
 @import url(cabinsVideo.css);
 @import url(map.css);
+@import url(facilities.css);
+@import url(more.css);
+@import url(stay.css);
 /*scss\css import end*/
 /*zeroing start*/
 *,

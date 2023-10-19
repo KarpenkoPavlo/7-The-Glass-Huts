@@ -1,0 +1,119 @@
+.stay {
+  padding-top: 150px;
+}
+
+.stay__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stay__title {
+  color: #5B6460;
+  font-family: "Open Sans";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 150%; /* 60/40 */
+}
+
+.stay__title:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.stay__location:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.stay__numberEmail:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.stay__location,
+.stay__numberEmail {
+  color: #000;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 187.5%; /* 30/16 */
+}
+
+.stay__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 43px;
+}
+
+.stay__item {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background-color: #5B6460;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.stay__priceBlock {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stay__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 386px;
+  max-height: 100px;
+}
+
+.stay__left {
+  background-color: #5B6460;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 155.555556%; /* 28/18 */
+  letter-spacing: 1px;
+  padding: 36px 5px 36px 5px;
+}
+
+.stay__right {
+  background-color: #E9ECE0;
+  padding: 22px 31px 22px 29px;
+}
+
+.stay1 {
+  color: #333;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 150%; /* 18/12 */
+  text-align: start;
+}
+
+.stay2 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%; /* 28/20 */
+  text-align: center;
+}
+
+.stay3 {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 150%; /* 18/12 */
+  text-align: end;
+}
