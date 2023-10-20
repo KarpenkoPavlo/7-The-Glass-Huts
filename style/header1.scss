@@ -29,6 +29,9 @@
     font-weight: 300;
     line-height: 171.428571%; /* 24/14 */
 }
+.header__burger {
+    display: none;
+}
 .header__language {
 }
 .header__button {
@@ -41,4 +44,55 @@
     line-height: 200%; /* 28/14 */
     letter-spacing: 1px;
     margin-left: auto;
+}
+.header__burger:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease 0s;
+}
+.header__burger:not(:hover) {
+    transition: all 0.2s ease 0s;
+}
+.header__burger:hover span {
+    width: 10px;
+    top: calc(50% - 1px);
+    transform: rotate(-50deg);
+    transition: all 0.5s ease 0s;
+}
+.header__burger:not(:hover) span {
+    transition: all 0.5s ease 0s;
+}
+@media (max-width: 991.98px) {
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+    }
+    .header__burger::before,
+    .header__burger::after {
+        content: '';
+        background-color: #000;
+        width: 100%;
+        height: 2px;
+    }
+    .header__burger::before {
+        position: absolute;
+        top: 0;
+        height: 2px;
+    }
+    .header__burger::after {
+        position: absolute;
+        height: 2px;
+    }
+    .header__burger span {
+        position: absolute;
+        top: 9px;
+        background-color: #000;
+        width: 100%;
+        height: 2px;
+    }
+    .header__menu {
+        position: absolute;
+        left: -100%;
+    }
 }
