@@ -1,3 +1,14 @@
 .cabinsVideo {
   padding-top: 150px;
 }
+
+.items__item iframe {
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .list__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}

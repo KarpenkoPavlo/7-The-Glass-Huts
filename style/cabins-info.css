@@ -14,15 +14,18 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 90px;
-     -moz-column-gap: 90px;
-          column-gap: 90px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
 }
 
 .cabinsInfo__text {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  padding-left: 15px;
 }
 
 .cabinsInfo__title {
@@ -56,4 +59,18 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 187.5%; /* 30/16 */
+}
+
+.cabinsInfo__image img {
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .cabinsInfo__cont {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }

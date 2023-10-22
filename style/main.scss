@@ -20,7 +20,6 @@
     top: 95px;
     right: 58px;
     z-index: 2;
-    justify-content: end;
 }
 .main__title {
     color: #FFF;
@@ -46,4 +45,14 @@
 .swiper-pagination-bullet {
 }
 .swiper-pagination-bullet-active {
+}
+@media (max-width: 991px) {
+    .main__text {
+        left: 0;
+        right: 0;
+    }
+    .main__subtitle {
+        justify-content: center;
+        padding-right: 0;
+    }
 }

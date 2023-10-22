@@ -7,10 +7,13 @@
 }
 .cabinsInfo__cont {
     display: flex;
-    column-gap: 90px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
 }
 .cabinsInfo__text {
     align-self: end;
+    padding-left: 15px;
 }
 .cabinsInfo__title {
     color: #5B6460;
@@ -41,4 +44,13 @@
     line-height: 187.5%; /* 30/16 */
 }
 .cabinsInfo__image {
+}
+.cabinsInfo__image img {
+    max-width: 100%;
+}
+@media (max-width: 991px) {
+    .cabinsInfo__cont {
+        display: grid;
+        justify-content: center;
+    }
 }

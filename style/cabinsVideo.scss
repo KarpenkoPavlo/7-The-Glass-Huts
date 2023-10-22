@@ -7,3 +7,11 @@
 }
 .items__item {
 }
+.items__item iframe {
+    max-width: 100%;
+}
+@media (max-width: 991px) {
+    .list__items {
+        flex-wrap: wrap;
+    }
+}
