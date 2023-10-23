@@ -30,6 +30,10 @@
     border: none;
     border-bottom: 1px solid #EFEFEF;
 }
+.footer__input:focus {
+    outline: none;
+    color: #fff;
+}
 .footer__input::placeholder {
     color: #FFF;
     font-family: "Open Sans";
@@ -37,6 +41,9 @@
     font-style: italic;
     font-weight: 300;
     line-height: 30/16; /* 187.5% */
+}
+.footer__input::after {
+    background-image: url(/img/footer/arrow.svg);
 }
 .footer__text {
     color: #FFF;
@@ -81,4 +88,35 @@
     gap: 40px;
 }
 .down__item {
+}
+@media (max-width: 991px) {
+    .footer__container {
+        flex-direction: column-reverse;
+    }
+    .footer__rigth {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .down__items {
+        justify-content: center;
+    }
+    .footer__left {
+        display: grid;
+        justify-content: center;
+    }
+    .footer__date {
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .up__items {
+        display: grid;
+        text-align: center;
+    }
+}
+@media (max-width: 479px) {
+    .footer__input {
+        width: 200px;
+    }
 }

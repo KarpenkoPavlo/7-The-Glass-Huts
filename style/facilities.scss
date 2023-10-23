@@ -39,3 +39,14 @@
     font-weight: 400;
     line-height: 155.555556%; /* 28px/18 */
 }
+@media (max-width: 767px) {
+    .facilities__items {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width: 479px) {
+    .facilities__items {
+        grid-template-columns: repeat(2,1fr);
+    }
+}

@@ -19,6 +19,7 @@
     justify-content: center;
     background-color: #E9ECE0;
     width: 100%;
+    padding: 15px;
 }
 .text__block {
 }
@@ -50,4 +51,16 @@
     font-style: italic;
     font-weight: 400;
     line-height: 187.5%; /* 30/16 */
+    transition: all 0.3s ease 0s;
+}
+.map__link:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 991px) {
+    .map__cont {
+        display: grid;
+    }
+    .map__map iframe {
+        width: 100%;
+    }
 }
