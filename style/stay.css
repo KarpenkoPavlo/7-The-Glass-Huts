@@ -63,6 +63,7 @@
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  width: 386px;
 }
 
 .swiper-wrapper {

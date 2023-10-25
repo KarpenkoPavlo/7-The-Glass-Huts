@@ -18,6 +18,12 @@
 @import url(more.css);
 @import url(stay.css);
 @import url(footer.css);
+
+//booking1 start
+@import url(/style/booking1/main.css);
+@import url(/style/booking1/choose.css);
+//booking1 end
+
 /*scss\css import end*/
 
 
@@ -108,4 +114,10 @@ body {
 }
 .page__stay {
 }
+
+//choose start
+.page__choose {
+}
+//choose end
+
 /*pages end*/

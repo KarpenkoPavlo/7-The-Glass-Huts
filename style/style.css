@@ -16,6 +16,8 @@
 @import url(more.css);
 @import url(stay.css);
 @import url(footer.css);
+@import url(/style/booking1/main.css);
+@import url(/style/booking1/choose.css);
 /*scss\css import end*/
 /*zeroing start*/
 *,
