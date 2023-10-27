@@ -37,21 +37,20 @@
   transition: all 0.5s ease 0s;
 }
 
-.items__item:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .item__link {
   color: #000;
   font-family: "Open Sans";
   font-size: 14px;
   font-weight: 300;
   line-height: 171.428571%; /* 24/14 */
+  padding: 5px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .item__link:hover {
-  font-weight: 400;
+  background-color: #828080;
+  color: #fff;
 }
 
 .header__burger {
