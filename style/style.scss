@@ -22,7 +22,13 @@
 //booking1 start
 @import url(/style/booking1/main.css);
 @import url(/style/booking1/choose.css);
+@import url(/style/booking1/info.css);
 //booking1 end
+
+//payment start
+@import url(/style/payment/payment.css);
+
+//payment end
 
 /*scss\css import end*/
 
@@ -115,9 +121,11 @@ body {
 .page__stay {
 }
 
-//choose start
 .page__choose {
 }
-//choose end
+.page__info {
+}
 
+.page__form {
+}
 /*pages end*/
