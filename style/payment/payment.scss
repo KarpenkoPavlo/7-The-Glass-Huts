@@ -5,7 +5,7 @@
 }
 .formButon {
     color: #333;
-    font-family: "DIN";
+    font-family: "Handlee";
     font-size: 16px;
     font-weight: 300;
     line-height: 225%; /* 36/16 */
@@ -23,7 +23,6 @@
     margin-bottom: 24px;
 }
 .formGridBlock {
-    padding-top: 24px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
@@ -64,4 +63,152 @@
     max-width: 318px;
     border: none;
     padding: 16px 22.5px;
+}
+
+//payWith
+.formBlock2 {
+    padding-top: 55px;
+    max-width: 660px;
+}
+.titleBlock {
+    display: flex;
+    justify-content: space-between;
+}
+.form__title {
+}
+.titleSocial {
+    display: flex;
+    column-gap: 20px;
+}
+.formBlock2__form {
+}
+.block2__form {
+    display: grid;
+    gap: 24px;
+}
+.formCredit {
+}
+.inputCredit {
+}
+.inputCredit::before {
+}
+.formCard {
+}
+.inputCard {
+}
+.formExCCV {
+    display: flex;
+    justify-content: space-between;
+}
+.form__Ex {
+}
+.input__Ex {
+    width: 100%;
+    padding: 16px 22.5px;
+    border: none;
+    border-right: 1px solid #333;
+}
+.form__CCV {
+}
+.input__CCV {
+    width: 100%;
+    padding: 16px 22.5px;
+    border: none;
+}
+.formZIPCountry {
+    display: flex;
+    justify-content: space-between;
+}
+.form__ZIP {
+}
+.input__ZIP {
+    padding: 16px 22.5px;
+    width: 100%;
+    max-width: 318px;
+}
+.form__Country2 {
+}
+.input__Country2 {
+    padding: 16px 22.5px;
+    width: 100%;
+    max-width: 318px;
+}
+
+.formCredit,
+.formCard,
+.formExCCV {
+    border: 0.7px solid var(--green, #5B6460);
+}
+
+.inputCredit,
+.inputCard {
+    width: 100%;
+    border: none;
+    padding: 16px 22.5px;
+}
+
+hr {
+    margin-bottom: 24px;
+}
+//payment block start
+.addInfo {
+    padding-top: 100px;
+    width: 100%;
+    max-width: 660px;
+}
+.addInfo__title {
+    color: var(--green, #5B6460);
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 100%; /* 24/24 */
+}
+.addInfo__form {
+    padding-top: 20px;
+}
+.addInfo__input {
+    padding: 16px 22px;
+    width: 100%;
+    max-height: 100px;
+    color: var(--Gray-3, #828282);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 112.5%; /* 18/16 */
+}
+.terms {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.custCheckBoxInfo {
+}
+.termsText {
+    color: var(--Gray-1, #333);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%; /* 28/16 */
+    padding-bottom: 50px;
+}
+.termsText span {
+    color: var(--green, #5B6460);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 175%; /* 28/16 */
+    text-decoration-line: underline;
+}
+.paymentBut {
+    width: 100%;
+    max-width: 384px;
+    border: 1px solid var(--green, #5B6460);
+    background: var(--green, #5B6460);
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 16px;
 }

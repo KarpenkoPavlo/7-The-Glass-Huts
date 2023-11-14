@@ -90,33 +90,55 @@
                             </form>
                         </div>
                     </div>
-                    <div class="formBlock">
+                    <div class="formBlock2">
                         <div class="titleBlock">
                             <div class="form__title">Pay with</div>
                             <div class="titleSocial">
-                                <img src="/img/payment/social_01.svg" alt="payment1">
-                                <img src="/img/payment/social_02.svg" alt="payment2">
-                                <img src="/img/payment/social_03.svg" alt="payment3">
-                                <img src="/img/payment/social_04.svg" alt="payment4">
+                                <div>
+                                    <img src="/img/payment/social_01.svg" alt="payment1">
+                                </div>
+                                <div>
+                                    <img src="/img/payment/social_02.svg" alt="payment2">
+                                </div>
+                                <div>
+                                    <img src="/img/payment/social_03.svg" alt="payment3">
+                                </div>
+                                <div>
+                                    <img src="/img/payment/social_04.svg" alt="payment4">
+                                </div>
                             </div>
                         </div>
                         <hr>
-                        <form action="number" class="formCredit">
-                            <input type="number" class="inputCredit" placeholder="Credit or debit card">
+                        <div class="block2__form">
+                            <form action="" class="formCredit">
+                                <input type="number" class="inputCredit" placeholder="Credit or debit card">
+                            </form>
+                            <form action="" class="formCard">
+                                <input type="number" class="inputCard" placeholder="Card number">
+                            </form>
+                            <div class="formExCCV">
+                                <input type="text" class="input__Ex" placeholder="Expiration">
+                                <input type="number" class="input__CCV" placeholder="CCV">
+                            </div>
+                            <div class="formZIPCountry">
+                                <input type="number" class="input__ZIP" placeholder="ZIP code ">
+                                <input type="text" class="input__Country2" placeholder="Country">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addInfo">
+                        <div class="addInfo__title">Additional information</div>
+                        <form action="" class="addInfo__form">
+                            <textarea class="addInfo__input" id="" cols="66" rows="10" placeholder="Leave a message"></textarea>
                         </form>
-                        <form action="number" class="formCard">
-                            <input type="number" class="inputCard" placeholder="Card number">
-                        </form>
-                        <form action="#" class="formExCCV">
-                            <input type="text" class="inputEx" placeholder="Expiration">
-                            <input type="number" class="inputCCV" placeholder="CCV">
-                        </form>
-                        <form action="number" class="formZIP">
-                            <input type="number" class="inputZIP" placeholder="ZIP code ">
-                        </form>
-                        <form action="text" class="formCountry2">
-                            <input type="text" class="inputCountry2" placeholder="Country">
-                        </form>
+                        <div class="terms">
+                            <div class="custCheckBoxInfo">
+                                <input type="checkbox" id="ch1">
+                                <input type="checkbox" id="ch2">
+                            </div>
+                            <div class="termsText">I have read and accept <span>Terms & Conditions</span></div>
+                        </div>
+                        <button class="paymentBut">CONFIRM AMD PAY</button>
                     </div>
                 </div>
             </section>

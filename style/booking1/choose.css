@@ -187,7 +187,7 @@
 
 .checkBlock__title {
   color: #333;
-  font-family: "DIN";
+  font-family: "Handlee";
   font-size: 12px;
   font-weight: 500;
   line-height: 133.333333%; /* 16/12 */
@@ -216,7 +216,7 @@
   border: 1px solid #5B6460;
   background: #5B6460;
   color: #FFF;
-  font-family: "DIN";
+  font-family: "HANDLEE";
   font-size: 14px;
   font-weight: 300;
   line-height: 200%; /* 28/14 */
@@ -307,7 +307,7 @@
 
 .form__button {
   color: #FFF;
-  font-family: "DIN";
+  font-family: "HANDLEE";
   font-size: 14px;
   font-weight: 300;
   line-height: 200%; /* 28/14 */
