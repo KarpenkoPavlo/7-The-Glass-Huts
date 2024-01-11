@@ -178,19 +178,51 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border: 0.7px solid var(--green, #5B6460);
   padding: 15px 21px 17px 21px;
   margin-bottom: 25px;
 }
 
+.check__block {
+  width: 100%;
+  max-width: 60px;
+}
+
 .checkBlock__title {
+  text-align: center;
   color: #333;
-  font-family: "Handlee";
+  font-family: "Mulish";
   font-size: 12px;
   font-weight: 500;
   line-height: 133.333333%; /* 16/12 */
+}
+
+.checkMinusPlus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chekMinus {
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 20px;
+  font-size: 20px;
+}
+
+.checkNumber {
+  padding: 0px 2px;
+}
+
+.checkPlus {
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 20px;
+  font-size: 20px;
 }
 
 .checkBlock__subtitle {
@@ -216,7 +248,7 @@
   border: 1px solid #5B6460;
   background: #5B6460;
   color: #FFF;
-  font-family: "HANDLEE";
+  font-family: "Mulish";
   font-size: 14px;
   font-weight: 300;
   line-height: 200%; /* 28/14 */
@@ -307,7 +339,7 @@
 
 .form__button {
   color: #FFF;
-  font-family: "HANDLEE";
+  font-family: "Mulish";
   font-size: 14px;
   font-weight: 300;
   line-height: 200%; /* 28/14 */
