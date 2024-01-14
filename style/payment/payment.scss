@@ -1,11 +1,12 @@
 .form {
     padding-top: 100px;
+    padding-bottom: 150px;
 }
 .form__container {
 }
 .formButon {
     color: #333;
-    font-family: "Handlee";
+    font-family: "Mulish";
     font-size: 16px;
     font-weight: 300;
     line-height: 225%; /* 36/16 */
@@ -40,10 +41,13 @@
 }
 .formTel {
     display: flex;
-    column-gap: 24px;
+    // column-gap: 24px;
 }
 .formTelCountry {
-    padding-left: 24px;
+    display: flex;
+    padding: 0px 24px;
+    border-right: 1px solid #333;
+    height: 100%;
 }
 .formTelLine {
     width: 1px;
@@ -169,7 +173,10 @@ hr {
 .addInfo__input {
     padding: 16px 22px;
     width: 100%;
+    max-width: 660px;
     max-height: 100px;
+    min-width: 300px;
+    min-height: 70px;
     color: var(--Gray-3, #828282);
     font-family: "Open Sans";
     font-size: 16px;
@@ -181,8 +188,12 @@ hr {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding-bottom: 50px;
 }
 .custCheckBoxInfo {
+}
+.checkbox {
+    cursor: pointer;
 }
 .termsText {
     color: var(--Gray-1, #333);
@@ -190,7 +201,7 @@ hr {
     font-size: 16px;
     font-weight: 400;
     line-height: 175%; /* 28/16 */
-    padding-bottom: 50px;
+
 }
 .termsText span {
     color: var(--green, #5B6460);
