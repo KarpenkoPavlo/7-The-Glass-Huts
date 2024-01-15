@@ -27,3 +27,30 @@ function checkBox() {
 }
 
 document.querySelector('.checkbox').addEventListener('click', checkBox);
+
+/*------------------------------------------------------------------------------------------*/
+
+/* checkMinusPlus */
+function checkMinusPlus() {
+  let n = 0;
+
+  let chekMinus = document.querySelector('.chekMinus');
+  let checkPlus = document.querySelector('.checkPlus');
+  let checkNumber = document.querySelector('.checkNumber');
+
+  chekMinus.addEventListener('click', () => {
+    if(checkNumber.textContent == 0) {
+      preventDefault();
+    } else {
+      n--;
+      checkNumber.textContent = n;
+    }
+  })
+
+  checkPlus.addEventListener('click', () => {
+    n++;
+    checkNumber.textContent = n;
+  })
+}
+
+checkMinusPlus();

@@ -79,6 +79,7 @@
     gap: 30px;
 }
 .up__item {
+    cursor: pointer;
 }
 .footer__down {
 }
@@ -88,6 +89,7 @@
     gap: 40px;
 }
 .down__item {
+    cursor: pointer;
 }
 @media (max-width: 991px) {
     .footer__container {

@@ -126,6 +126,10 @@
   gap: 30px;
 }
 
+.up__item {
+  cursor: pointer;
+}
+
 .down__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,6 +138,10 @@
       -ms-flex-pack: end;
           justify-content: end;
   gap: 40px;
+}
+
+.down__item {
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {

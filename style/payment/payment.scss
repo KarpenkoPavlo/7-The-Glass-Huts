@@ -1,8 +1,18 @@
 .form {
+    display: flex;
     padding-top: 100px;
     padding-bottom: 150px;
+    max-width: 1408px;
+    margin: 0 auto;
 }
 .form__container {
+}
+.backButton {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 200px;
 }
 .formButon {
     color: #333;
@@ -46,7 +56,6 @@
 .formTelCountry {
     display: flex;
     padding: 0px 24px;
-    border-right: 1px solid #333;
     height: 100%;
 }
 .formTelLine {
@@ -222,4 +231,32 @@ hr {
     font-weight: 300;
     letter-spacing: 1px;
     padding: 16px;
+}
+
+/* CheckPay */
+.checkFormPay__container {
+}
+.checkPayBlock {
+    border: 0.7px solid var(--green, #5B6460);
+    padding: 24px;
+}
+.checkPayTitle {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+}
+.titlePay1 {
+    color: var(--Gray-1, #333);
+    font-family: Open Sans;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 166.666667%; /* 40/24 */
+    padding-right: 17px;
+}
+.titlePay2 {
+    color: var(--Gray-1, #333);
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 250%; /* 40/16 */
 }

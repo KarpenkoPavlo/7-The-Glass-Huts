@@ -301,7 +301,6 @@
 }
 
 .right__total {
-  padding-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,10 +323,10 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 90%; /* 18/20 */
-  margin-bottom: 40px;
 }
 
 .right__formButton {
+  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

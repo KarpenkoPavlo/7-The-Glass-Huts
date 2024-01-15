@@ -1,0 +1,18 @@
+/* backgroundBlock start */
+.backgroundBlock {
+    background: url(/img/theHut/backgroundBlock.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+}
+.backgroundBlockTitle {
+    padding-top: 67px;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    font-family: Open Sans;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 102.857143%; /* 72/70 */
+}
+/* backgroundBlock end */
