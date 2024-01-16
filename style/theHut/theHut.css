@@ -22,3 +22,110 @@
 }
 
 /* backgroundBlock end */
+/* article start */
+.outside {
+  padding-bottom: 150px;
+}
+
+.swiper-pagination {
+  margin-left: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+}
+
+.swiper-button-prev {
+  color: #000;
+  top: 510px;
+  --swiper-navigation-size: 25px;
+}
+
+.swiper-button-next {
+  color: #000;
+  top: 510px;
+  right: 400px;
+  --swiper-navigation-size: 25px;
+}
+
+.paginationInfoBlockLeft {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.paginationInfoBlockRight {
+  padding-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.mySwiper {
+  width: 100%;
+  max-width: 546px;
+  height: 525px;
+  margin: 0;
+}
+
+.paginationInfo {
+  padding-top: 67px;
+  padding-right: 114px;
+}
+
+.pInfoTitle {
+  color: var(--forest, #5B6460);
+  font-family: Open Sans;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px; /* 100% */
+}
+
+.pInfoNavBar {
+  padding-top: 50px;
+}
+
+.infoItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 31px;
+}
+
+.infoItem {
+  cursor: pointer;
+  color: var(--forest, #5B6460);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 166.666667%; /* 30/18 */
+}
+
+.infoItem:hover {
+  text-decoration: underline;
+}
+
+.pText {
+  padding-top: 50px;
+  width: 429px;
+  height: 243px;
+  color: var(--Gray-1, #333);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 187.5%; /* 30/16 */
+}
+
+/* article end */
