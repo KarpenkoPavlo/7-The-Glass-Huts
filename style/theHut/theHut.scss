@@ -18,10 +18,10 @@
 /* backgroundBlock end */
 
 /* article start */
-.outside {
+.articleBlocks {
     padding-bottom: 150px;
 }
-.outside__container {
+.articleBlocks__container {
 }
 .swiper-pagination {
     margin-left: 65px;
@@ -29,15 +29,15 @@
     width: auto;
 }
 .swiper-button-prev {
-    color: #000;
-    top: 510px;
-    --swiper-navigation-size: 25px;
+    color: #fff;
+    // top: 450px;
+    --swiper-navigation-size: 35px;
 }
 .swiper-button-next {
-    color: #000;
-    top: 510px;
-    right: 400px;
-    --swiper-navigation-size: 25px;
+    color: #fff;
+    // top: 450px;
+    right: 300px;
+    --swiper-navigation-size: 35px;
 }
 .swiper-scrollbar {
 }
@@ -52,11 +52,17 @@
     justify-content: space-between;
     flex-direction: row-reverse;
 }
+.paginationInfoBlockRight .mySwiper {
+    margin-left: 24px;
+}
+.paginationInfoBlockRight .swiper-button-next {
+    margin-right: -24px;
+}
 .mySwiper {
-    width: 100%;
-    max-width: 546px;
-    height: 525px;
-    margin: 0;
+    // width: 100%;
+    // max-width: 546px;
+    // height: 525px;
+    // margin: 0;
 }
 .paginationInfo {
     padding-top: 67px;

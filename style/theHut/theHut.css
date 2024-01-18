@@ -23,7 +23,7 @@
 
 /* backgroundBlock end */
 /* article start */
-.outside {
+.articleBlocks {
   padding-bottom: 150px;
 }
 
@@ -36,16 +36,14 @@
 }
 
 .swiper-button-prev {
-  color: #000;
-  top: 510px;
-  --swiper-navigation-size: 25px;
+  color: #fff;
+  --swiper-navigation-size: 35px;
 }
 
 .swiper-button-next {
-  color: #000;
-  top: 510px;
-  right: 400px;
-  --swiper-navigation-size: 25px;
+  color: #fff;
+  right: 300px;
+  --swiper-navigation-size: 35px;
 }
 
 .paginationInfoBlockLeft {
@@ -72,11 +70,12 @@
           flex-direction: row-reverse;
 }
 
-.mySwiper {
-  width: 100%;
-  max-width: 546px;
-  height: 525px;
-  margin: 0;
+.paginationInfoBlockRight .mySwiper {
+  margin-left: 24px;
+}
+
+.paginationInfoBlockRight .swiper-button-next {
+  margin-right: -24px;
 }
 
 .paginationInfo {
