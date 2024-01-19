@@ -10,6 +10,9 @@
     padding-left: 10%;
 }
 .block__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 263px;
     text-align: center;

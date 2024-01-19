@@ -61,6 +61,10 @@
   line-height: 187.5%; /* 30/16 */
 }
 
+.cabinsInfo__link:hover {
+  text-decoration: underline;
+}
+
 .cabinsInfo__image img {
   max-width: 100%;
 }

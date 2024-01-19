@@ -54,7 +54,7 @@
     transition: all 0.3s ease 0s;
 }
 .map__link:hover {
-    transform: scale(1.1);
+    text-decoration: underline;
 }
 @media (max-width: 991px) {
     .map__cont {

@@ -74,8 +74,7 @@
 }
 
 .map__link:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  text-decoration: underline;
 }
 
 @media (max-width: 991px) {

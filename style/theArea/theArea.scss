@@ -53,3 +53,26 @@
     border: 1px solid #FFF;
 }
 // backgroundArea end
+
+//mapArea start
+.mapArea {
+}
+.mapArea__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+.mapTitle {
+    color: var(--forest, #5B6460);
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 56/40 */
+    padding-left: 114px;
+}
+.mapSvg {
+    padding-right: 77px;
+}
+//mapArea end

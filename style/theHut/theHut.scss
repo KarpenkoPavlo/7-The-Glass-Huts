@@ -45,6 +45,10 @@
     padding-top: 150px;
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+.paginationInfoBlockLeft .mySwiper {
+    margin: 0px;
 }
 .paginationInfoBlockRight {
     padding-top: 150px;
@@ -52,21 +56,14 @@
     justify-content: space-between;
     flex-direction: row-reverse;
 }
-.paginationInfoBlockRight .mySwiper {
-    margin-left: 24px;
-}
-.paginationInfoBlockRight .swiper-button-next {
-    margin-right: -24px;
+.paginationInfoBlockRight .paginationInfo {
+    padding-right: 405px;
 }
 .mySwiper {
-    // width: 100%;
-    // max-width: 546px;
-    // height: 525px;
-    // margin: 0;
+    width: 546px;
 }
 .paginationInfo {
     padding-top: 67px;
-    padding-right: 114px;
 }
 .pInfoTitle {
     color: var(--forest, #5B6460);

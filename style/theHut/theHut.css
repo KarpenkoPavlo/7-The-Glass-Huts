@@ -54,6 +54,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+
+.paginationInfoBlockLeft .mySwiper {
+  margin: 0px;
 }
 
 .paginationInfoBlockRight {
@@ -70,17 +75,16 @@
           flex-direction: row-reverse;
 }
 
-.paginationInfoBlockRight .mySwiper {
-  margin-left: 24px;
+.paginationInfoBlockRight .paginationInfo {
+  padding-right: 405px;
 }
 
-.paginationInfoBlockRight .swiper-button-next {
-  margin-right: -24px;
+.mySwiper {
+  width: 546px;
 }
 
 .paginationInfo {
   padding-top: 67px;
-  padding-right: 114px;
 }
 
 .pInfoTitle {
