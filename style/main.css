@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.main .mySwiper {
+  width: 100%;
+}
+
 .main__text {
   position: absolute;
   top: 95px;

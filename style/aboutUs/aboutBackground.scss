@@ -1,0 +1,40 @@
+.aboutBackground {
+    display: grid;
+    place-content: center;
+    background: url(/img/AboutUs/backgroundAbout2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+}
+.aboutTitle {
+    color: #FFF;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 102.857143%; /* 72/70 */
+}
+.aboutTitle:not(:last-child) {
+    margin-bottom: 90px;
+}
+.aboutButtons {
+    display: flex;
+    color: #FFF;
+    text-align: center;
+    gap: 24px;
+}
+.aboutBtt1 {
+    padding: 14px 45px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.aboutBtt2 {
+    padding: 14px 55px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.aboutBtt1:hover,
+.aboutBtt2:hover {
+    color: #000;
+    background-color: #FFF;
+}

@@ -37,12 +37,13 @@
 
 .swiper-button-prev {
   color: #fff;
+  top: 450px;
   --swiper-navigation-size: 35px;
 }
 
 .swiper-button-next {
   color: #fff;
-  right: 300px;
+  top: 450px;
   --swiper-navigation-size: 35px;
 }
 
@@ -55,6 +56,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .paginationInfoBlockLeft .mySwiper {
@@ -73,10 +77,13 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.paginationInfoBlockRight .paginationInfo {
-  padding-right: 405px;
+.paginationInfoBlockRight .mySwiper {
+  margin: 0px;
 }
 
 .mySwiper {
