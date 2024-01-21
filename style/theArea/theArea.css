@@ -64,6 +64,13 @@
   letter-spacing: 1px;
   padding: 14px 30px;
   border: 1px solid #FFF;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.buttArea:hover {
+  color: #000;
+  background-color: #FFF;
 }
 
 .mapArea__container {

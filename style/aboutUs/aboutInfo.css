@@ -1,0 +1,38 @@
+.aboutInfo {
+  padding-top: 150px;
+}
+
+.aboutInfo__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 137px;
+}
+
+.aboutInfoText {
+  display: -ms-grid;
+  display: grid;
+  gap: 32px;
+}
+
+.aboutInfoText1 {
+  padding-top: 67px;
+  color: var(--forest, #5B6460);
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 150%; /* 36/24 */
+}
+
+.aboutInfoText2 {
+  color: var(--Gray-1, #333);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 187.5%; /* 30/16 */
+}

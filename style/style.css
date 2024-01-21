@@ -21,6 +21,8 @@
 @import url(/style/theHut/theHut.css);
 @import url(/style/theArea/theArea.css);
 @import url(/style/aboutUs/aboutBackground.css);
+@import url(/style/aboutUs/aboutInfo.css);
+@import url(/style/aboutUs/aboutGrid.css);
 /*scss\css import end*/
 /*zeroing start*/
 *,

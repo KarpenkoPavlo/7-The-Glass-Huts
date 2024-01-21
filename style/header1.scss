@@ -76,11 +76,14 @@
     line-height: 200%; /* 28/14 */
     letter-spacing: 1px;
     margin-left: auto;
-    transition: all 0.5s ease 0s;
+    transition: all 0.3s ease 0s;
     cursor: pointer;
 }
 .header__button:hover {
-    transform: scale(0.9);
+    color: #5B6460;
+    border: 1px solid #5B6460;
+    background-color: #FFF;
+    font-weight: 500;
 }
 @media (max-width: 991.98px) {
     .header__burger {

@@ -51,6 +51,11 @@
     letter-spacing: 1px;
     padding: 14px 30px;
     border: 1px solid #FFF;
+    transition: all 0.3s ease 0s;
+}
+.buttArea:hover {
+    color: #000;
+    background-color: #FFF;
 }
 // backgroundArea end
 
