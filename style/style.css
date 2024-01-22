@@ -23,6 +23,8 @@
 @import url(/style/aboutUs/aboutBackground.css);
 @import url(/style/aboutUs/aboutInfo.css);
 @import url(/style/aboutUs/aboutGrid.css);
+@import url(/style/aboutUs/aboutForm.css);
+@import url(/style/faq/faq.css);
 /*scss\css import end*/
 /*zeroing start*/
 *,
