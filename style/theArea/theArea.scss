@@ -64,7 +64,7 @@
 }
 .mapArea__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 100px;
 }
@@ -75,10 +75,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 56/40 */
-    padding-left: 114px;
+    // padding-left: 114px;
 }
 .mapSvg {
-    padding-right: 77px;
+}
+.mapSvg img {
+    max-width: 100%;
 }
 //mapArea end
 
@@ -89,4 +91,15 @@
     font-style: italic;
     font-weight: 400;
     line-height: 150%; /* 36/24 */
+}
+
+@media (max-width: 1100px) {
+    .mapArea__container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mapTitle {
+        width: 100%;
+        text-align: center;
+    }
 }

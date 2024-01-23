@@ -3,6 +3,7 @@
     background: url(/img/theHut/backgroundBlock.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 350px;
 }
 .backgroundBlockTitle {
@@ -23,11 +24,11 @@
 }
 .articleBlocks__container {
 }
-.swiper-pagination {
-    margin-left: 65px;
-    display: flex;
-    width: auto;
-}
+// .swiper-pagination {
+//     margin-left: 65px;
+//     display: flex;
+//     width: auto;
+// }
 .swiper-button-prev {
     color: #fff;
     top: 450px;
@@ -46,7 +47,6 @@
     justify-content: space-between;
     position: relative;
     gap: 30px;
-    flex-wrap: wrap;
 }
 .paginationInfoBlockLeft .mySwiper {
     margin: 0px;
@@ -57,13 +57,13 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     gap: 30px;
-    flex-wrap: wrap;
 }
 .paginationInfoBlockRight .mySwiper {
     margin: 0px;
 }
 .mySwiper {
-    width: 546px;
+    width: 100%;
+    max-width: 546px;
 }
 .paginationInfo {
     padding-top: 67px;
@@ -105,3 +105,28 @@
     line-height: 187.5%; /* 30/16 */
 }
 /* article end */
+
+@media (max-width: 1100px) {
+    .paginationInfoBlockRight,
+    .paginationInfoBlockLeft {
+        padding-top: 50px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .paginationInfo {
+        width: 100%;
+    }
+    .pInfoTitle {
+        text-align: center;
+    }
+    .infoItems {
+        justify-content: center;
+    }
+    .pText {
+        width: 100%;
+    }
+    .swiper-slide img {
+        background-position: center;
+    }
+}
