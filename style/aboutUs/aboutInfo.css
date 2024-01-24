@@ -9,17 +9,20 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 137px;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .aboutInfoText {
+  max-width: 430px;
   display: -ms-grid;
   display: grid;
   gap: 32px;
 }
 
 .aboutInfoText1 {
-  padding-top: 67px;
   color: var(--forest, #5B6460);
   font-family: "Open Sans";
   font-size: 24px;
@@ -35,4 +38,20 @@
   font-style: normal;
   font-weight: 300;
   line-height: 187.5%; /* 30/16 */
+}
+
+@media (max-width: 991px) {
+  .aboutInfo__container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutInfoText {
+    max-width: 100%;
+  }
+  .aboutInfoImg img {
+    width: 100%;
+  }
 }

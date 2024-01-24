@@ -84,5 +84,16 @@
   }
   .map__map iframe {
     width: 100%;
+    height: 400px;
+  }
+  .map__text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .text__block {
+    width: 100%;
+  }
+  .map__subtitle {
+    max-width: 100%;
   }
 }

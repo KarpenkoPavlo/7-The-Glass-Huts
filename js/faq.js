@@ -3,16 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
     let faqGreen = document.querySelectorAll(".faqGreen");
   
     faqButt.forEach((button, index) => {
-      let faqButtImg = button.querySelector(".faqButtImg");
+      let arrowDown = button.querySelector(".arrowDown");
+      let arrowUp = button.querySelector(".arrowUp");
   
       button.addEventListener("click", function () {
         if (faqGreen[index].style.display === "block") {
             faqGreen[index].style.display = "none";
-            faqButtImg.src = "/img/FAQ/up.svg";
+            arrowDown.style.display = "block";
+            arrowUp.style.display = "none";
 
         } else {
             faqGreen[index].style.display = "block";
-            faqButtImg.src = "/img/FAQ/down.svg";
+            arrowDown.style.display = "none";
+            arrowUp.style.display = "block";
         }
       });
     });

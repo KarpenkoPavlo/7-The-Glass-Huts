@@ -67,7 +67,7 @@
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  width: 386px;
+  max-width: 386px;
 }
 
 .swiper-wrapper {
@@ -163,5 +163,10 @@
 @media (max-width: 430px) {
   .stay__title {
     font-size: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .stay__priceBlock {
+    max-width: 320px;
   }
 }

@@ -73,7 +73,9 @@
   background-color: #FFF;
 }
 
-.mapArea__container {
+.blockMapArea__cont {
+  margin: 0 auto;
+  max-width: 1408px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,7 +111,7 @@
 }
 
 @media (max-width: 1100px) {
-  .mapArea__container {
+  .blockMapArea__cont {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -119,5 +121,10 @@
   .mapTitle {
     width: 100%;
     text-align: center;
+  }
+}
+@media (max-width: 991px) {
+  .blockMapArea__cont {
+    height: 400px;
   }
 }
