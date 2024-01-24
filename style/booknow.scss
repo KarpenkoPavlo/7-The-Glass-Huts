@@ -23,11 +23,13 @@
     line-height: 155.555556%; /* 28/18 */
     letter-spacing: 1px;
     padding: 36px 5px;
-    transition: all 0.5s ease 0s;
+    transition: all 0.3s ease 0s;
     cursor: pointer;
 }
 .block__left:hover {
-    background-color: #333;
+    background-color: #fff;
+    color: #5B6460;
+    border: 1px solid #5B6460;
 }
 .block__right {
     background-color: #E9ECE0;
