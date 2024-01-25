@@ -139,6 +139,8 @@
 }
 
 .chooseRight {
+  width: 100%;
+  max-width: 432px;
   padding: 22px 24px 24px 24px;
   border: 0.7px solid var(--green, #5B6460);
   height: 100%;

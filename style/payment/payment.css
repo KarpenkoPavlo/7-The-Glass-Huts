@@ -125,14 +125,11 @@
 .input__Ex {
   width: 100%;
   padding: 16px 22.5px;
-  border: none;
-  border-right: 1px solid #333;
 }
 
 .input__CCV {
   width: 100%;
   padding: 16px 22.5px;
-  border: none;
 }
 
 .formZIPCountry {
@@ -142,6 +139,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 24px;
 }
 
 .input__ZIP {
@@ -157,8 +155,7 @@
 }
 
 .formCredit,
-.formCard,
-.formExCCV {
+.formCard {
   border: 0.7px solid var(--green, #5B6460);
 }
 
@@ -175,8 +172,6 @@ hr {
 
 .addInfo {
   padding-top: 100px;
-  width: 100%;
-  max-width: 660px;
 }
 
 .addInfo__title {
@@ -193,8 +188,8 @@ hr {
 
 .addInfo__input {
   padding: 16px 22px;
-  width: 100%;
   max-width: 660px;
+  width: 100%;
   max-height: 100px;
   min-width: 300px;
   min-height: 70px;
@@ -267,6 +262,15 @@ hr {
   padding-bottom: 24px;
 }
 
+.imgTitlepay2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .titlePay1 {
   color: var(--Gray-1, #333);
   font-family: Open Sans;
@@ -282,4 +286,50 @@ hr {
   font-size: 16px;
   font-weight: 400;
   line-height: 250%; /* 40/16 */
+}
+
+@media (max-width: 1100px) {
+  .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__container:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .formGridBlock {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .formExCCV {
+    row-gap: 24px;
+  }
+  .formExCCV,
+  .formZIPCountry {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .input__ZIP {
+    max-width: 100%;
+  }
+  .input__Country2 {
+    max-width: 100%;
+  }
+  .checkPayTitle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .titlePay1 {
+    padding-right: 0;
+  }
+  .checkPayBlock .right__check {
+    margin-bottom: 25px;
+  }
 }

@@ -43,3 +43,20 @@
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
+@media (max-width: 780px) {
+  .aboutTitle:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 479px) {
+  .aboutTitle {
+    font-size: 50px;
+  }
+  .aboutButtons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}

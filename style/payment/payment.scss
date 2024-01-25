@@ -118,19 +118,20 @@
 .input__Ex {
     width: 100%;
     padding: 16px 22.5px;
-    border: none;
-    border-right: 1px solid #333;
+    // border: none;
+    // border-right: 1px solid #333;
 }
 .form__CCV {
 }
 .input__CCV {
     width: 100%;
     padding: 16px 22.5px;
-    border: none;
+    // border: none;
 }
 .formZIPCountry {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 }
 .form__ZIP {
 }
@@ -148,8 +149,7 @@
 }
 
 .formCredit,
-.formCard,
-.formExCCV {
+.formCard {
     border: 0.7px solid var(--green, #5B6460);
 }
 
@@ -166,8 +166,6 @@ hr {
 //payment block start
 .addInfo {
     padding-top: 100px;
-    width: 100%;
-    max-width: 660px;
 }
 .addInfo__title {
     color: var(--green, #5B6460);
@@ -181,8 +179,8 @@ hr {
 }
 .addInfo__input {
     padding: 16px 22px;
-    width: 100%;
     max-width: 660px;
+    width: 100%;
     max-height: 100px;
     min-width: 300px;
     min-height: 70px;
@@ -245,6 +243,10 @@ hr {
     align-items: center;
     padding-bottom: 24px;
 }
+.imgTitlepay2 {
+    display: flex;
+    align-items: center;
+}
 .titlePay1 {
     color: var(--Gray-1, #333);
     font-family: Open Sans;
@@ -259,4 +261,41 @@ hr {
     font-size: 16px;
     font-weight: 400;
     line-height: 250%; /* 40/16 */
+}
+
+@media (max-width: 1100px) {
+    .form {
+        flex-direction: column;
+    }
+    .form__container:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .formGridBlock {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .formExCCV {
+        row-gap: 24px;
+    }
+    .formExCCV,
+    .formZIPCountry {
+        flex-direction: column;
+    }
+    .input__ZIP {
+        max-width: 100%;
+    }
+    .input__Country2 {
+        max-width: 100%;
+    }
+    .checkPayTitle {
+        flex-direction: column;
+    }
+    .titlePay1 {
+        padding-right: 0;
+    }
+    .checkPayBlock .right__check {
+        margin-bottom: 25px;
+    }
 }

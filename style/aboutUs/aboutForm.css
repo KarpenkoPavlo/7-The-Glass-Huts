@@ -19,7 +19,6 @@
 .aboutForm-firstName,
 .aboutForm-lastName {
   width: 100%;
-  max-width: 318px;
 }
 
 .aboutMessage {
@@ -114,7 +113,9 @@
 }
 @media (max-width: 479px) {
   .aboutForm-nameFirstLast {
-    display: -ms-grid;
-    display: grid;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

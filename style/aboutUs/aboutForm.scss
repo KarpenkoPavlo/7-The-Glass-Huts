@@ -16,7 +16,6 @@
 .aboutForm-firstName,
 .aboutForm-lastName {
     width: 100%;
-    max-width: 318px;
 }
 .aboutEmail {
 }
@@ -114,10 +113,9 @@
 
 @media (max-width: 479px) {
     .aboutForm-nameFirstLast {
-        display: grid;
+        flex-direction: column;
     }
     .aboutForm-firstName,
     .aboutForm-lastName {
-        
     }
 }
