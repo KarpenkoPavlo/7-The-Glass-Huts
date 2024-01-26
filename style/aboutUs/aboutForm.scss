@@ -93,6 +93,10 @@
     font-weight: 400;
     line-height: 112.5%; /* 18/16 */
 }
+.aboutTextarea {
+    min-width: 310px;
+    min-height: 124px;
+}
 
 @media (max-width: 1100px) {
     .stayContGrid {
@@ -114,8 +118,5 @@
 @media (max-width: 479px) {
     .aboutForm-nameFirstLast {
         flex-direction: column;
-    }
-    .aboutForm-firstName,
-    .aboutForm-lastName {
     }
 }

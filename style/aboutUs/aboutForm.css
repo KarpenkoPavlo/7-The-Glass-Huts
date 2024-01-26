@@ -85,6 +85,11 @@
   line-height: 112.5%; /* 18/16 */
 }
 
+.aboutTextarea {
+  min-width: 310px;
+  min-height: 124px;
+}
+
 @media (max-width: 1100px) {
   .stayContGrid {
     display: -ms-grid;

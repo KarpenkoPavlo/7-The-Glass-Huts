@@ -52,7 +52,7 @@
     cursor: pointer;
 }
 .stay__item:hover {
-    background-color: #333;
+    background-color: #555;
 }
 .stay__priceBlock {
     align-self: end;
@@ -82,7 +82,9 @@
     transition: all 0.3s ease 0s;
 }
 .stay__left:hover {
-    background-color: #333;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #5B6460;
 }
 .stay__right {
     background-color: #E9ECE0;

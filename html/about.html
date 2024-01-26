@@ -53,17 +53,43 @@
         <!--main start-->
         <main class="page">
 
+            <div class="overlay"></div>
+
             <!--aboutBackground start-->
             <section class="aboutBackground">
                 <h1 class="aboutTitle">About Us</h1>
                 <div class="aboutButtons">
-                    <button class="aboutBtt1 buttArea">contact us</button>
+                    <button onclick="contactUs()" class="aboutBtt1 buttArea">contact us</button>
                     <button class="aboutBtt2 buttArea">read FAQ</button>
                 </div>
             </section>
             <!--aboutBackground end-->
 
             <!--aboutInfo start-->
+
+            <div class="contactUs__container">
+                <div class="aboutForm">
+                    <div class="aboutForm-nameFirstLast">
+                        <form action="text" class="aboutForm-firstName">
+                            <input type="text" placeholder="First Name" class="aboutFirstNameInput aboutInput">
+                        </form>
+                        <form action="text" class="aboutForm-lastName">
+                            <input type="text" placeholder="Last Name" class="aboutLastNameInput aboutInput">
+                        </form>
+                    </div>
+                    <form action="email" class="aboutEmail">
+                        <input type="email" placeholder="Email" class="aboutEmailInput aboutInput">
+                    </form>
+                    <form action="text" class="aboutSubject">
+                        <input type="text" placeholder="Subject" class="aboutSubjectInput aboutInput">
+                    </form>
+                    <form action="text" class="aboutMessage">
+                        <textarea cols="660" rows="5" placeholder="Message" class="aboutTextareaInput aboutTextarea"></textarea>
+                    </form>
+                    <button onclick="aboutButtHide()" class="aboutButtHide">SEND</button>
+                </div>
+            </div>
+
             <section class="aboutInfo">
                 <div class="aboutInfo__container">
                     <div class="aboutInfoImg">
@@ -204,6 +230,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/js/aboutUs.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>
