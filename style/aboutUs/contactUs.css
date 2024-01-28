@@ -2,9 +2,18 @@
 .contactUs__container {
   display: none;
   position: absolute;
-  width: 660px;
+  max-width: 660px;
+  width: 100%;
   left: 50%;
   bottom: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 10%;
+}
+
+.contactUs__container .aboutForm {
+  max-width: 660px;
+  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -15,7 +24,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Здесь вы можете настроить цвет и прозрачность затемнения */
+  background: rgba(0, 0, 0, 0.7);
   display: none; /* По умолчанию блок скрыт */
 }
 
