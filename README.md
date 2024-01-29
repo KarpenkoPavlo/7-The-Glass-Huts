@@ -9,7 +9,7 @@
 
 ---
 
-<!-- >[Link to a ready-made website on Netlify hosting]() -->
+>[Netlify](https://theglasshuts.netlify.app/)
 
 >[Layout Link](https://www.figma.com/file/z8f0LQ9FjpeFAl09jh1TDY/The-Glass-Huts-Desktop-(Copy)?type=design&node-id=0-1&mode=design&t=ZTrfBOMDaiBZhhBV-0)
 ---

@@ -141,6 +141,10 @@
   cursor: pointer;
 }
 
+.up__item:hover {
+  text-decoration: underline;
+}
+
 .down__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,7 +155,7 @@
   gap: 40px;
 }
 
-.down__item {
+.down__item img {
   cursor: pointer;
 }
 

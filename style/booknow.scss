@@ -27,9 +27,10 @@
     cursor: pointer;
 }
 .block__left:hover {
-    background-color: #fff;
+    background-color: #E9ECE0;
     color: #5B6460;
-    border: 1px solid #5B6460;
+    border-right: 1px solid #5B6460;
+    border-left: 1px solid #E9ECE0;
 }
 .block__right {
     background-color: #E9ECE0;

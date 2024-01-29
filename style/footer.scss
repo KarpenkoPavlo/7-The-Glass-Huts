@@ -89,6 +89,9 @@
 .up__item {
     cursor: pointer;
 }
+.up__item:hover {
+    text-decoration: underline;
+}
 .footer__down {
 }
 .down__items {
@@ -96,7 +99,7 @@
     justify-content: end;
     gap: 40px;
 }
-.down__item {
+.down__item img {
     cursor: pointer;
 }
 @media (max-width: 991px) {

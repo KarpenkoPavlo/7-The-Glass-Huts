@@ -82,9 +82,10 @@
     transition: all 0.3s ease 0s;
 }
 .stay__left:hover {
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #5B6460;
+    background-color: #E9ECE0;
+    color: #5B6460;
+    border-right: 1px solid #5B6460;
+    border-left: 1px solid #E9ECE0;
 }
 .stay__right {
     background-color: #E9ECE0;
