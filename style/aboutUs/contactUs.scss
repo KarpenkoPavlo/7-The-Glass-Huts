@@ -22,6 +22,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
     display: none; /* По умолчанию блок скрыт */
+    z-index: 10;
 }
 
 .no-scroll {

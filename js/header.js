@@ -17,9 +17,9 @@ window.onscroll = function() {
       header.style.backgroundColor = "rgb(5%, 5%, 5%, 0)";
       imgLogo.src = "/img/header/logo.svg";
   
-      item__link.forEach(function(item) {
-        item.style.color = 'black';
-      })
+      // item__link.forEach(function(item) {
+      //   item.style.color = 'black';
+      // })
     }
   }
   /*header backgeound end*/
