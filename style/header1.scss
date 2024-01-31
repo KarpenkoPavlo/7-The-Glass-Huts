@@ -43,25 +43,44 @@
 }
 .header__burger {
     display: none;
-}
-.header__burger:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease 0s;
-}
-.header__burger:not(:hover) {
-    transition: all 0.2s ease 0s;
-}
-.header__burger:hover span {
-    width: 10px;
-    top: calc(50% - 1px);
-    transform: rotate(-50deg);
-    transition: all 0.5s ease 0s;
-}
-.header__burger:not(:hover) span {
-    transition: all 0.5s ease 0s;
-}
-.header__language {
+    position: relative;
+    width: 30px;
+    height: 20px;
     cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+.burger-line {
+  display: none;
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+.burger-line:nth-child(1) {
+  top: 0;
+}
+.burger-line:nth-child(2) {
+  top: 50%;  
+  transform: translateY(-50%);
+}
+.burger-line:nth-child(3) {
+  bottom: 0;
+}
+.header__burger.cross .burger-line:nth-child(1) {
+    transform: rotate(-45deg) translate(-12px);
+  }
+  
+  .header__burger.cross .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .header__burger.cross .burger-line:nth-child(3) {
+    transform: rotate(45deg) translate(-12px);
+  }
+
+.header__language {
+  cursor: pointer;
 }
 .header__button {
     width: 100%;
@@ -102,33 +121,9 @@
 @media (max-width: 750px) {
     .header__burger {
         display: block;
-        position: relative;
-        width: 100%;
-        max-width: 30px;
-        height: 20px;
     }
-    .header__burger::before,
-    .header__burger::after {
-        content: '';
-        background-color: #000;
-        width: 100%;
-        height: 2px;
-    }
-    .header__burger::before {
-        position: absolute;
-        top: 0;
-        height: 2px;
-    }
-    .header__burger::after {
-        position: absolute;
-        height: 2px;
-    }
-    .header__burger span {
-        position: absolute;
-        top: 9px;
-        background-color: #000;
-        width: 100%;
-        height: 2px;
+    .burger-line {
+        display: block;
     }
 
     .header {
@@ -145,7 +140,7 @@
         row-gap: 50px;
     }
     .item__link {
-        font-size: 50px;
+        font-size: 30px;
     }
 
 
@@ -157,10 +152,14 @@
         order: 4;
     }
     .header__language {
-        margin-left: auto;
+        position: absolute;
+        display: none;
+        bottom: -35px;
+        right: 20px;
         order: 2;
     }
     .header__burger {
+        margin-left: auto;
         order: 3;
     }
 }

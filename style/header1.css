@@ -52,32 +52,52 @@
 
 .header__burger {
   display: none;
-}
-
-.header__burger:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
   -webkit-transition: all 0.2s ease 0s;
   transition: all 0.2s ease 0s;
 }
 
-.header__burger:not(:hover) {
-  -webkit-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
+.burger-line {
+  display: none;
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-.header__burger:hover span {
-  width: 10px;
-  top: calc(50% - 1px);
-  -webkit-transform: rotate(-50deg);
-          transform: rotate(-50deg);
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+.burger-line:nth-child(1) {
+  top: 0;
 }
 
-.header__burger:not(:hover) span {
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+.burger-line:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.burger-line:nth-child(3) {
+  bottom: 0;
+}
+
+.header__burger.cross .burger-line:nth-child(1) {
+  -webkit-transform: rotate(-45deg) translate(-12px);
+          transform: rotate(-45deg) translate(-12px);
+}
+
+.header__burger.cross .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger.cross .burger-line:nth-child(3) {
+  -webkit-transform: rotate(45deg) translate(-12px);
+          transform: rotate(45deg) translate(-12px);
 }
 
 .header__language {
@@ -127,33 +147,9 @@
 @media (max-width: 750px) {
   .header__burger {
     display: block;
-    position: relative;
-    width: 100%;
-    max-width: 30px;
-    height: 20px;
   }
-  .header__burger::before,
-  .header__burger::after {
-    content: "";
-    background-color: #000;
-    width: 100%;
-    height: 2px;
-  }
-  .header__burger::before {
-    position: absolute;
-    top: 0;
-    height: 2px;
-  }
-  .header__burger::after {
-    position: absolute;
-    height: 2px;
-  }
-  .header__burger span {
-    position: absolute;
-    top: 9px;
-    background-color: #000;
-    width: 100%;
-    height: 2px;
+  .burger-line {
+    display: block;
   }
   .header {
     z-index: 11;
@@ -170,7 +166,7 @@
     row-gap: 50px;
   }
   .item__link {
-    font-size: 50px;
+    font-size: 30px;
   }
   .header__logo {
     -webkit-box-ordinal-group: 2;
@@ -184,12 +180,16 @@
             order: 4;
   }
   .header__language {
-    margin-left: auto;
+    position: absolute;
+    display: none;
+    bottom: -35px;
+    right: 20px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
   .header__burger {
+    margin-left: auto;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
