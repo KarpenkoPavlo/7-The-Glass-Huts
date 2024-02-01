@@ -43,8 +43,6 @@
   font-weight: 300;
   line-height: 171.428571%; /* 24/14 */
   padding: 5px;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
 }
 
 .item__link::before {
@@ -62,6 +60,8 @@
 
 .item__link:hover:after,
 .item__link:hover:before {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   width: 100%;
 }
 
@@ -214,6 +214,17 @@
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .headerLanguageItems {
+    right: 30px;
+    bottom: -130px;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .headerLanguageItems img:not(:last-child) {
+    margin-bottom: 15px;
   }
   .header__burger {
     margin-left: auto;

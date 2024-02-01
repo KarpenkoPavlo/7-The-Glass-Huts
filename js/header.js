@@ -78,13 +78,22 @@ burgerF();
 
 /* headerLanguage start */
 let headerLanguageItems = document.querySelector('.headerLanguageItems');
+let languageItem = document.querySelectorAll('.languageItem');
+let header__languageImg = document.querySelector('.header__language img');
+
 
 function headerLanguage() {
 
-  if(headerLanguageItems.style.display = "none") {
+  if(headerLanguageItems.style.display === "block") {
+    headerLanguageItems.style.display = "none"
+  } else {
     headerLanguageItems.style.display = "block";
-  } else if(headerLanguageItems.style.display = "block") {
-    headerLanguageItems.style.display = "none";
   }
+
+  languageItem.forEach((item) => {
+    item.addEventListener("click", () => {
+      header__languageImg.src = item.src;
+    })
+  })
 };
 /* headerLanguage end */
