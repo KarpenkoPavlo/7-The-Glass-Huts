@@ -5,6 +5,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 0px 0px 5px #9c9b9b;
+    transition: all 0.5s ease 0s;
 }
 .header__container {
     display: flex;
@@ -34,13 +35,28 @@
     font-weight: 300;
     line-height: 171.428571%; /* 24/14 */
     padding: 5px;
+    transition: all 0.5s ease 0s;
+}
 
+// Лінії починаються з різних сторін
+.item__link::before {
+    margin-left: auto;
 }
-.item__link:hover {
-    background-color: #828080;
-    color: #fff;
-    transition: all 0.3s ease 0s;
+// Створюємо линії
+.item__link::after,
+.item__link::before {
+    display: block;
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #000;
 }
+// Лінії будуть займать всю ширину слова
+.item__link:hover:after,
+.item__link:hover:before {
+    width: 100%;
+}
+
 .header__burger {
     display: none;
     position: relative;
@@ -82,6 +98,16 @@
 .header__language {
   cursor: pointer;
 }
+.headerLanguageItems {
+    display: none;
+    position: absolute;
+    bottom: -10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 10px 5px;
+    gap: 15px;
+}
+
 .header__button {
     width: 100%;
     text-align: center;
@@ -98,10 +124,6 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
-.header__button:hover {
-    color: #fff;
-    background-color: #7b7c77;
-}
 @media (max-width: 991.98px) {
     .header__menu {
         width: 100%;
@@ -115,6 +137,13 @@
     }
     .item__link {
         padding: 10px 25px;
+    }
+    .item__link:hover {
+        text-decoration: overline;
+    }
+    .item__link::after,
+    .item__link::before {
+        display: none;
     }
 }
 

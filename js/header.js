@@ -1,13 +1,17 @@
 /*header backgeound start*/
 let imgLogo = document.querySelector('.imgLogo');
 let item__link = document.querySelectorAll('.item__link');
+let header__button = document.querySelector('.header__button');
+let header__language = document.querySelector('.header__language');
 
 window.onscroll = function() {
   let header = document.querySelector(".header");
 
   if(document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
-    header.style.backgroundColor = "rgb(45%, 45%, 45%, 0.7)";
+    header.style.backgroundColor = "rgb(45, 45, 45, 0.7)";
     imgLogo.src = "/img/header/logoWhite.svg";
+    header__button.style.backgroundColor = "white";
+    header__button.style.color = "black";
 
     item__link.forEach(function(item) {
       item.style.color = 'white';
@@ -16,6 +20,8 @@ window.onscroll = function() {
   } else {
     header.style.backgroundColor = "rgb(5%, 5%, 5%, 0)";
     imgLogo.src = "/img/header/logo.svg";
+    header__button.style.backgroundColor = "#5B6460";
+    header__button.style.color = "white";
 
     item__link.forEach(function(item) {
       item.style.color = 'black';
@@ -67,3 +73,18 @@ function burgerF() {
 
 burgerF();
 /*burger end*/
+
+//------------------------------------------
+
+/* headerLanguage start */
+let headerLanguageItems = document.querySelector('.headerLanguageItems');
+
+function headerLanguage() {
+
+  if(headerLanguageItems.style.display = "none") {
+    headerLanguageItems.style.display = "block";
+  } else if(headerLanguageItems.style.display = "block") {
+    headerLanguageItems.style.display = "none";
+  }
+};
+/* headerLanguage end */
