@@ -3,6 +3,7 @@ let imgLogo = document.querySelector('.imgLogo');
 let item__link = document.querySelectorAll('.item__link');
 let header__button = document.querySelector('.header__button');
 let header__language = document.querySelector('.header__language');
+let burgerLine = document.querySelectorAll('.burger-line');
 
 window.onscroll = function() {
   let header = document.querySelector(".header");
@@ -13,6 +14,10 @@ window.onscroll = function() {
     header__button.style.backgroundColor = "white";
     header__button.style.color = "black";
 
+    burgerLine.forEach(function(item) {
+      item.style.backgroundColor = 'white';
+    })
+
     item__link.forEach(function(item) {
       item.style.color = 'white';
     })
@@ -22,6 +27,10 @@ window.onscroll = function() {
     imgLogo.src = "/img/header/logo.svg";
     header__button.style.backgroundColor = "#5B6460";
     header__button.style.color = "white";
+
+    burgerLine.forEach(function(item) {
+      item.style.backgroundColor = 'black';
+    })
 
     item__link.forEach(function(item) {
       item.style.color = 'black';
@@ -52,6 +61,10 @@ function burgerF() {
       header__language.style.display = "block";
       imgLogo.src = "/img/header/logoWhite.svg";
 
+      burgerLine.forEach(function(item) {
+        item.style.backgroundColor = 'white';
+      })
+
       item__link.forEach(function(item) {
         item.style.color = 'white';
       })
@@ -62,6 +75,10 @@ function burgerF() {
       overlay.style.display = "none";
       header__language.style.display = "none";
       imgLogo.src = "/img/header/logo.svg";
+
+      burgerLine.forEach(function(item) {
+        item.style.backgroundColor = 'black';
+      })
 
       item__link.forEach(function(item) {
         item.style.color = 'black';
